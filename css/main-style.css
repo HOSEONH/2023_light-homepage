@@ -1,0 +1,189 @@
+/* 사용할 폰트 */
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OAGothic-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/OAGothic-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 태그이름을 통한 css디자인 */
+h1 {
+    font-size: 2rem;
+    font-family: 'OAGothic-ExtraBold';
+}
+section {
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/* 클래스 이름을 통한 css디자인 */
+/* header의 nav */
+.header { 
+    position: fixed;
+    /* background-color: #2D3192cc; */
+    background: linear-gradient(#000000, #2D3192cc); /* 그라데이션 효과 */
+    width: 100%;
+    color: white;
+}
+.header>.nav {
+    /*background-color: aliceblue;*/
+    max-width: 1000px;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*중앙 정렬*/
+    padding: 10px 20px;
+}
+.header>.nav>.nav-menu {
+    display: flex;
+    width: 40%; /*크기를 차지하자*/
+    justify-content: space-evenly;
+}
+.header>.nav>.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-family: 'OAGothic-ExtraBold';
+
+}
+
+.header>.nav>.nav-title {
+    width: 170px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'PyeongChangPeace-Bold';
+}
+
+/*main*/
+/* 섹션부분을 찾기 힘들 것 같다면 메인에 두어도 상관없음 */
+.main { /*background-color: rgb(123, 206, 206); */}
+
+/*section 단위로 접근*/
+.section1-wrap {
+    width: 100%; /*부모값을 받아와있어서*/
+    min-height: 400px; /*사진을 작성해주어야할때는 최솟값을 설정해줘서 작게 나오는 것 방지*/
+    height: 100vh;
+    background-image: url(../img/Festival5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section1-wrap>.section1-title {
+    /*padding-top: 300px;*/
+    color: white;
+    text-align: right;
+    padding: 250px 0 20px 20px; /*top right bottom left*//*position도 가능*/
+}
+.section1-wrap>.section1-title>h1 {
+    font-size: 3rem;
+}
+.section1-wrap>.section1-title>h3 {
+    font-family: 'OAGothic-ExtraBold';
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* section2 행사 설명 */
+.section2-intro {
+    text-align: center;
+    padding: 40px 0;
+    line-height: 160%;
+}
+.section2-intro>.intro-title,
+.section2-intro>.intro-title>h1 {
+    margin-bottom: 20px;
+}
+.section2-intro>.intro-title>h3 {
+    font-family: 'NanumSquareNeo-Variable';
+}
+.section2-intro>.intro-descript>table {
+    font-family: 'NanumSquareNeo-Variable';
+    margin: auto; /*중앙정렬*/
+    padding: 10px;
+}
+.section2-intro>.intro-descript td:first-child {
+    color: #2D3192;
+    padding: 5px 10px;
+    border-right: #2D3192 2px solid;
+    font-weight: bold;
+}
+.section2-intro>.intro-descript table tr td {
+    padding: 5px 10px;
+}
+
+/* section3 행사이미지 */
+.section3-wrap {
+    /*background-color: #EB5D9955;*/
+}
+.section3-wrap>.section3-gallery>.gallery-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.section3-gallery>.gallery-board {
+    display: inline-block;
+    width: 280px;
+    height: 350px;
+    background-color: lightgray;
+    border-radius: 20px;
+    text-align: center;
+}
+.section3-gallery>.gallery-board>h4 {
+    font-weight: bold;
+}
+/* section3 이미지 넣는 공간 */
+.section3-gallery>.gallery-board:nth-child(2)>.image {
+    margin: 15px;
+    width: 250px;
+    height: 250px;
+    /*나중에 수정하기 위함*/
+    background-image: url(../img/Festival3.jpg);
+}
+.section3-gallery>.gallery-board:nth-child(3)>.image {
+    margin: 15px;
+    width: 250px;
+    height: 250px;
+    /*나중에 수정하기 위함*/
+    background-image: url(../img/Festival3.jpg);
+}
+.section3-gallery>.gallery-board:nth-child(4)>.image {
+    margin: 15px;
+    width: 250px;
+    height: 250px;
+    /*나중에 수정하기 위함*/
+    background-image: url(../img/Festival3.jpg);
+}
+
+/* section4 행사뉴스 */
+.section4-news {
+    padding: 30px 0;
+}
+
+.section4-news>table {
+    width: 80%;
+    margin: auto;
+}
+.section4-news>table tr td:first-child {
+    color: #2D3192;
+    font-weight: bolder;
+    padding-right: 50px;
+}
+.section4-news>table tr td {
+    padding: 15px 0;
+    border-top: #2D3192 2px solid;
+    border-bottom: #2D3192 2px solid;
+}

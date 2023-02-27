@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main-style.css">
 </head>
 <body>
     <header class="header">
@@ -22,7 +24,7 @@
         <!-- 섹션1 행사이름 시작 -->
         <!-- section-wrap을 통해서 전체 백그라운드 이미지 -->
         <div class="section1-wrap">
-            <section class="section1-totle">
+            <section class="section1-title">
                 <h1>부산 희망 드림 빛 축제</h1>
                 <h3>행사 일시 : 2022.12.05 ~ 2023.02.28 </h3>
                 <h3>부산시민공원</h3>
@@ -64,24 +66,23 @@
         <!-- 섹션3 행사이미지 시작 -->
         <!-- section3-wrap 배경색 수정 -->
         <div class="section3-wrap">
-            <h1>시민 갤러리</h1>
-            <a href="">더보기</a>
             <!-- 이미지와 설명 -->
-            <section class="section3-grally">
-                <div class="grally-board">
+            <section class="section3-gallery">
+                <div class="gallery-title">
+                    <h1>시민 갤러리</h1>
+                    <a href="">더보기</a>
+                </div>
+                <div class="gallery-board">
                     <div class="image"></div>
-                    <!-- <img src="" alt="이미지"> 
-                        이미지가 자꾸 바뀔 것 같다면 css로 넣어주면 편하다/변하지 않을 경우에는 img태그 ex)로고 -->
                     <h4>제목</h4>
                     <p>내용</p>
                 </div>
-                <div class="grally-board">
+                <div class="gallery-board">
                     <div class="image"></div>
-                    <!-- <img src="" alt="이미지"> 
-                        이미지가 자꾸 바뀔 것 같다면 css로 넣어주면 편하다/변하지 않을 경우에는 img태그 ex)로고 -->
                     <h4>제목</h4>
                     <p>내용</p>
-                </div>                <div class="grally-board">
+                </div>                
+                <div class="gallery-board">
                     <div class="image"></div>
                     <!-- <img src="" alt="이미지"> 
                         이미지가 자꾸 바뀔 것 같다면 css로 넣어주면 편하다/변하지 않을 경우에는 img태그 ex)로고 -->
@@ -92,7 +93,12 @@
         <!-- 섹션3 행사이미지 끝 -->
         <!-- 섹션4 행사뉴스 시작 -->
         <section class="section4-news">
+            <h1>관련 뉴스</h1>
             <table>
+                <tr>
+                    <td>날짜</td>
+                    <td>제목</td>
+                </tr>
                 <tr>
                     <td>날짜</td>
                     <td>제목</td>
@@ -103,6 +109,23 @@
     </main>
     <!-- footer 시작 -->
     <footer class="footer"></footer>
+    <div class="footer-contaent">
+        <img src="" alt="로고">
+        <p>주소</p>
+        <p>전화 번호</p>
+        <p>이 웹페이지를 만든 회사</p>
+        <a href="">
+            <img src="" alt="페이스북">
+        </a>
+        <a href="">
+            <img src="" alt="인스타">
+        </a>
+    </div>
     <!-- footer 끝 -->
+    <!-- top버튼 시작 -->
+    <div class="top-button">
+        <a href="">Top</a>
+    </div>
+    <!-- top버튼 끝 -->
 </body>
 </html>
