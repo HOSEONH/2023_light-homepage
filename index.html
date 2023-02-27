@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/main-style.css">
 </head>
 <body>
+    <a name="#top"></a>
     <header class="header">
         <!-- 고정 네비게이션 바 시작 -->
         <nav class="nav">
@@ -73,17 +74,23 @@
                     <a href="">더보기</a>
                 </div>
                 <div class="gallery-board">
-                    <div class="image"></div>
+                    <div class="image-wrap">
+                        <div class="image"></div>
+                    </div>
                     <h4>제목</h4>
                     <p>내용</p>
                 </div>
                 <div class="gallery-board">
-                    <div class="image"></div>
+                    <div class="image-wrap">
+                        <div class="image"></div>
+                    </div>
                     <h4>제목</h4>
                     <p>내용</p>
                 </div>                
                 <div class="gallery-board">
-                    <div class="image"></div>
+                    <div class="image-wrap">
+                        <div class="image"></div>
+                    </div>
                     <!-- <img src="" alt="이미지"> 
                         이미지가 자꾸 바뀔 것 같다면 css로 넣어주면 편하다/변하지 않을 경우에는 img태그 ex)로고 -->
                     <h4>제목</h4>
@@ -108,23 +115,26 @@
         <!-- 섹션4 행사뉴스 끝 -->
     </main>
     <!-- footer 시작 -->
-    <footer class="footer"></footer>
-    <div class="footer-contaent">
-        <img src="" alt="로고">
-        <p>주소</p>
-        <p>전화 번호</p>
-        <p>이 웹페이지를 만든 회사</p>
+    <footer class="footer">
+    <div class="footer-content">
+        <img src="./img/house-solid.svg" width="40" alt="로고">
+        <div class="footer-info">
+            <p>주소</p>
+            <p>전화 번호</p>
+            <p>이 웹페이지를 만든 회사</p>
+        </div>
         <a href="">
-            <img src="" alt="페이스북">
+            <img src="./img/facebook.svg"  width="40" alt="페이스북">
         </a>
         <a href="">
-            <img src="" alt="인스타">
+            <img src="./img/instagram.svg"  width="40" alt="인스타">
         </a>
     </div>
+</footer>
     <!-- footer 끝 -->
     <!-- top버튼 시작 -->
     <div class="top-button">
-        <a href="">Top</a>
+        <a href="#top">Top</a>
     </div>
     <!-- top버튼 끝 -->
 </body>
